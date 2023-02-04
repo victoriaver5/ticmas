@@ -1,0 +1,17 @@
+button{
+        color: rgb(255, 255, 255); font-size: 15px; line-height: 15px; padding:5px; margin-left:15px; border-radius: 0px; font-family: Georgia, serif; font-weight: normal; font-style: normal; font-variant: normal; background-image: linear-gradient(to right, rgb(97, 108, 116) 0%, rgb(66, 64, 64) 50%, rgb(17, 17, 18) 100%); box-shadow: rgb(18, 17, 17) 2px 2px 5px 2px; border: 2px solid rgb(245, 245, 246); display: inline-block;}
+        .myButton:hover {
+        background:black; }
+        .myButton:active {
+        background: rgb(27, 25, 25); 
+    }    
+body{
+    background-color: #D6DBDF;
+};
+
+h1{
+    position: relative;
+    left: 30px;
+    right: 50px;
+}
+
