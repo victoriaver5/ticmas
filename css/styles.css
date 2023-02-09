@@ -1,17 +1,41 @@
-button{
+.myButton{
         color: rgb(255, 255, 255); font-size: 15px; line-height: 15px; padding:5px; margin-left:15px; border-radius: 0px; font-family: Georgia, serif; font-weight: normal; font-style: normal; font-variant: normal; background-image: linear-gradient(to right, rgb(97, 108, 116) 0%, rgb(66, 64, 64) 50%, rgb(17, 17, 18) 100%); box-shadow: rgb(18, 17, 17) 2px 2px 5px 2px; border: 2px solid rgb(245, 245, 246); display: inline-block;}
         .myButton:hover {
         background:black; }
         .myButton:active {
         background: rgb(27, 25, 25); 
-    }    
+    }
+       
+    
+    #fotodeperfil{
+        background-color:black;
+        width: 300px;
+        height: 300px;
+        position: absolute;
+        top: 55px;
+        right: 100px;
+        margin: 10px 10px 10px 10px;
+        padding: 5px 5px 5px 5px;
+        border: 15px 15px 15px 15px;
+    }
+
+    h1{
+        color: black;
+        font-size: 40px;
+        font-family: 'Source Serif Pro', serif;
+        margin: 5px 5px 5px 5px;
+        padding: 2px 2px 2px 2px;
+        position: relative;
+    }
+    h2{
+        font-size: 25px;
+        font-family: 'Fira Sans', sans-serif;
+}
+
+h3,p{
+    display: flex;
+}
 body{
     background-color: #D6DBDF;
 };
-
-h1{
-    position: relative;
-    left: 30px;
-    right: 50px;
-}
 
