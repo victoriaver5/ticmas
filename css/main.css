@@ -1,19 +1,23 @@
 .topheader{
-
+    background-image: linear-gradient(to right, rgb(92, 102, 100) 0%, rgb(84, 92, 88) 50%, rgb(53, 130, 92) 100%); 
+    box-shadow:  0 4px 5px rgb(41, 43, 43);  
 }
 
 .topnav{
  display: flex;
  justify-content: space-between;
-
+ padding: 10px;
+ max-width: 980px;
+ margin: 0 auto;
 }
 
 .logo{
     display: flex;
     align-items:center;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 500;
-    color: black;
+    color: rgb(248, 247, 247);
+    text-decoration: none;
 }
 
 .logo img {
@@ -29,10 +33,68 @@
 }
 
 .menu li{
+    padding: 0px 15px;
+}
+
+.menu a{
+    color: rgb(255, 252, 252);
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 50px;
+    text-transform: uppercase;
+  }
+
+  .open-menu,
+  .close-menu {
+    display: none;}
+ 
+  @media (max-width: 950px ){
+    
+.menu{
+    flex-direction: column;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    align-items: center;
+    background-color: rgb(64, 60, 60);
+    height: 100%;
+    overflow-y: auto;
+
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0,3;
 
 }
 
-a{
-    color: white;
+.menu li{
+    padding: 0px 15px;
+}
+
+.menu a{
+    color: rgb(255, 252, 252);
     text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 50px;
+    text-transform: uppercase;
+  }
+
+  .openmenu,
+  .closemenu {
+    display: block;
+    border:none;
+    background: none;
+    cursor: pointer;}
+
+    .closemenu{
+        align-self: flex-end;
+        padding: 20px 15px;
+    }
+
+    .menu_opened{
+        opacity: 1;
+        pointer-events: all;
+    }
   }
