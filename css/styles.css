@@ -1,3 +1,15 @@
+html{
+  scroll-behavior: smooth;
+}
+
+
+body{
+  background-color: #c9ced3;
+  background-image: linear-gradient(to right, rgb(155, 164, 159) 0%, rgb(154, 162, 157) 50%, rgb(158, 192, 175) 100%);
+ 
+}
+    
+    
     .myButton{
         color: rgb(255, 255, 255); 
         font-size: 15px; 
@@ -19,10 +31,12 @@
         .myButton:hover {
         background:black; }
         .myButton:active {
-        background: rgb(27, 25, 25);    
+        background: rgb(247, 244, 244);    
     }
 
-    #fotodeperfil{
+
+
+    /* #fotodeperfil{ */
         background-color:black;
         width: 270px;
         height: 270px;
@@ -32,21 +46,17 @@
         margin: 10px 10px 10px 10px;
         padding: 5px 5px 5px 5px;
         border: 15px 15px 15px 15px;
-    }
+        display: flex;
+    /* } */
 
-    h1{
-        color: black;
-        font-size: 45px;
-        font-family: 'Source Serif Pro', serif;
-        margin: 5px 5px 5px 5px;
-        padding: 2px 2px 2px 2px;
-        position: relative;
-    }
 
     h2{
         font-size: 25px;
         font-family: 'Bitter', serif;
         margin: 10px 10px 10px 10px;
+        position: relative;
+        display: flex;
+        
     }
 
     h3{
@@ -81,64 +91,85 @@
         font-family: 'Bitter', serif;
     }
 
-    ul{
-        font-size: 20px;
-        position: grid;
-    } 
-      /* The dropdown container */
-      .dropdown {
-        float: left;
-        overflow: hidden;
-      }
-      
-      /* Dropdown button */
-      .dropdown .dropbtn {
-        font-size: 16px;
-        border: 3px;
-        outline: none;
-        color: white;
-        padding: 14px 16px;
-        background-color: inherit;
-        font-family: inherit; /* Important for vertical align on mobile phones */
-        margin: 0; /* Important for vertical align on mobile phones */
-      }
-      
-      /* Dropdown content (hidden by default) */
-      .dropdown-content {
-        display: none;
-        position: absolute;
-        background-image: linear-gradient(to right, rgb(174, 187, 184) 0%, rgb(125, 126, 126) 50%, rgb(53, 130, 92) 100%); 
-        box-shadow: rgb(18, 17, 17) 2px 2px 5px 2px; border: 2px solid rgb(0, 0, 0); 
-        min-width: 160px;
-        z-index: 1;
-      }
-      
-      /* Links inside the dropdown */
-      .dropdown-content a {
-        float: none;
-        color: rgb(3, 3, 3);
-        padding: 12px 16px;
-        text-decoration: none;
-        display: block;
-        text-align: left;
-      }
-      
-      /* Add a grey background color to dropdown links on hover */
-      .dropdown-content a:hover {
-        background-color: #9fc2aa;
-      }
-      
-      /* Show the dropdown menu on hover */
-      .dropdown:hover .dropdown-content {
-        display: block;
-      }
-
-      html{
-        scroll-behavior: smooth;
-      }
-
-    body{
-    background-color: #c9ced3;
-    background-image: linear-gradient(to right, rgb(155, 164, 159) 0%, rgb(154, 162, 157) 50%, rgb(158, 192, 175) 100%);
    
+   
+      
+.topheader{
+  position: relative;
+  background-image: linear-gradient(to right, rgb(92, 102, 100) 0%, rgb(84, 92, 88) 50%, rgb(53, 130, 92) 100%); 
+  box-shadow:  0 4px 5px rgb(41, 43, 43);
+  left: 0;  
+  top: 0;
+  width: 100%;
+  
 }
+
+.topnav{
+display: flex;
+justify-content: space-between;
+padding: 10px;
+max-width: 980px;
+margin: 0 auto;
+}
+
+.logo{
+  display: flex;
+  align-items:center;
+  font-size: 16px;
+  font-weight: 500;
+  color: rgb(248, 247, 247);
+  text-decoration: none;
+}
+
+.logo img {
+  border-radius: 50%;
+}
+
+.menu-horizontal{
+  display: flex;
+  list-style: none;
+  margin: 0px;
+  padding: 0px; 
+  justify-content: space-around;
+  
+}
+
+.menu-horizontal > li > a{
+  padding: 0px 15px;
+  display: block;
+  color:white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 50px;
+}
+.menu-horizontal > li:hover{
+  background-color: rgb(63, 188, 146);
+}
+
+.menu-vertical{
+  position: absolute;
+  display: none;
+  list-style: none;
+  width: 200px;
+  background-color: #000000;
+  
+}
+
+.menu-horizontal li:hover .menu-vertical{
+  display: block;
+}
+
+.menu-vertical li:hover{
+  background-color: rgb(65, 63, 63);
+}
+
+.menu-vertical li a {
+  display: block;
+  color: white;
+  padding: 15px 15px 15px 20px;
+  text-decoration: none;
+}
+
+
+    
