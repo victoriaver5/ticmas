@@ -138,3 +138,28 @@ body{
   background-color: #c9ced3;
   background-image: linear-gradient(to right, rgb(155, 164, 159) 0%, rgb(154, 162, 157) 50%, rgb(158, 192, 175) 100%);
 }
+
+.horizontal-padding{
+   padding-left: 25px;
+   padding-right: 25px;
+   
+}
+
+.vertical-padding{
+padding-top: 25px;
+padding-bottom: 25px;
+}
+
+
+@media (min-width: 950px){
+  .horizontal-padding{
+    padding-left: 70px;
+    padding-right: 70px;
+    
+ }
+ 
+ .vertical-padding{
+ padding-top: 70px;
+ padding-bottom: 70px;
+ }
+}
