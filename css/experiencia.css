@@ -1,0 +1,50 @@
+.expeciencias{
+    display: flex;
+    flex-direction: column;
+}
+
+.experiencias-body{
+    background-color: rgb(145, 162, 153);
+    color: rgb(0, 0, 0);
+}
+.wave{
+    transform: scaleY(-1);
+    top: -2px;
+    width: 100%;
+    position: relative;
+}
+.wave-botton{
+    top: 2px;
+}
+
+.experiencia-title{
+text-align: center;
+text-transform: uppercase;
+font-weight: bold;
+font-size: 30px;
+margin: 25px;
+}
+
+.experiencia-fecha{
+font-size: 25px;
+font-weight: bold;
+color: blue;
+}
+
+.experiencia-compania{
+font-size: 20px;
+text-transform: uppercase;
+margin-top: 5px;
+}
+
+.experiencia-posicion{
+font-weight: 500;
+font-size: 18px;
+margin-top: 20px;
+}
+
+.experiencia-descripcion{
+font-weight: 400;
+font-size: 15px;
+margin-top: 10px;
+}

@@ -2,7 +2,8 @@
 .topheader{
     background-image: linear-gradient(to right, rgb(92, 102, 100) 0%, rgb(84, 92, 88) 50%, rgb(53, 130, 92) 100%); 
     box-shadow:  0 4px 5px rgb(41, 43, 43);  
-}
+    z-index: 100;
+  }
 
 .topnav{
  display: flex;
@@ -122,11 +123,11 @@
           pointer-events: all;
       }
   
-}
 
 .menu ::after{
-  content: "";
+  content: none;
   
+}
 }
 
     html{ 
@@ -138,6 +139,7 @@ body{
   background-color: #c9ced3;
   background-image: linear-gradient(to right, rgb(155, 164, 159) 0%, rgb(154, 162, 157) 50%, rgb(158, 192, 175) 100%);
 }
+
 
 .horizontal-padding{
    padding-left: 25px;
