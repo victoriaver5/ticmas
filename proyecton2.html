@@ -39,14 +39,14 @@
               </button>
             <li><a href="#profile">perfil</a></li>
             <li><a href="#experiencia">experiencia laboral</a></li>
-            <li><a href="habilidades">habilidades</a></li>
-            <li><a href="contacto">contacto</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#contacto">contacto</a></li>
           </ul>
         </nav>
   </header>
     
   <div class="horizontal-padding, vertical-padding">
-    <section class="profile">
+    <section class="profile" id="profile">
       <div class="profile-info">
         <h1 class="profile-title">Hola soy <br/> Victoria Verdenelli</h1>
         <p class="profile-detalles">
@@ -63,11 +63,13 @@
     </section>
   </div>
 
-  <section class="experiencias">
-    <img src="img logo/wave.svg" alt="wave" class="wave">
+  <section class="experiencias" id="experiencia">
+    <img src="img logo/lawave.svg" alt="wave" class="wave">
     <div class="experiencias-body">
         <h2 class="experiencia-title">Experiencia Laboral</h2>
         <div class="experiencia-grid">
+          <div class="empty"></div>
+          <div class="line"></div>
           <div class="experiencia">
             <div class="experiencia-fecha"> 2018-2019 </div>
               <div class="experiencia-lugar"> compañia </div>
@@ -76,14 +78,11 @@
                    Sed pharetra turpis a mauris mollis accumsan.
                    Proin aliquam facilisis orci.
                    Proin suscipit dictum sem, ac fringilla est varius et. 
-                   Sed eget gravida nulla. Suspendisse pretium nulla eu ultrices hendrerit.
+,                   Sed eget gravida nulla. Suspendisse pretium nulla eu ultrices hendrerit.
                    Sed ut sagittis dolor. Vestibulum in metus at enim lacinia consectetur.
                    Sed id elementum lectus. Donec et lacus orci. Nam dictum efficitur rutrum. Praesent mi nisi, laoreet tincidunt mi eu, lobortis dapibus nunc. Praesent tristique lacus nec neque vehicula, id maximus massa iaculis. In imperdiet metus vel sagittis dictum. Aliquam commodo, ligula vel mattis maximus.
             </div>
           </div>
-        </div>
-    
-
     <div class="experiencia">
       <div class="experiencia-fecha"> 2019-2020 </div>
         <div class="experiencia-lugar"> compañia </div>
@@ -97,7 +96,10 @@
              Sed id elementum lectus. Donec et lacus orci. Nam dictum efficitur rutrum. Praesent mi nisi, laoreet tincidunt mi eu, lobortis dapibus nunc. Praesent tristique lacus nec neque vehicula, id maximus massa iaculis. In imperdiet metus vel sagittis dictum. Aliquam commodo, ligula vel mattis maximus.
       </div>
     </div>
-
+    <div class="line"></div>
+    <div class="empty"></div>
+    <div class="empty"></div>
+    <div class="line"></div>
 <div class="experiencia">
   <div class="experiencia-fecha"> 2021-2022 </div>
     <div class="experiencia-lugar"> compañia </div>
@@ -110,14 +112,14 @@
          Sed ut sagittis dolor. Vestibulum in metus at enim lacinia consectetur.
          Sed id elementum lectus. Donec et lacus orci. Nam dictum efficitur rutrum. Praesent mi nisi, laoreet tincidunt mi eu, lobortis dapibus nunc. Praesent tristique lacus nec neque vehicula, id maximus massa iaculis. In imperdiet metus vel sagittis dictum. Aliquam commodo, ligula vel mattis maximus.
   </div>
+ </div>
 </div>
 </div>
-</div>
-    <img src="img logo/wave.svg" alt="wave" class="wave-botton">
+    <img src="img logo/lawave.svg" alt="wave" class="wave-botton">
   </section>
 
   <div class="horizontal-padding, vertical-padding">
-    <section class="skills">
+    <section class="skills" id="habilidades">
       <h2 class="skills-title">Habilidades</h2>
 <ul class="skills-list">
   <li class="skills-skill">CSS</li>
@@ -127,5 +129,43 @@
 </ul>
     </section>
   </div>
+
+  <div class="horizontal-padding, vertical-padding">
+    <section class="contact" id="contacto">
+      <h2 class="contact-title">contacto</h2>
+      <div class="contact-detalles">
+        <div class="contact-detalles-grupo">
+          <p class="contact-label">Direccion:</p>
+          <p class="contact-text">Cordoba, Argentina</p>
+        </div>
+
+        <div class="contact-detalles-grupo">
+          <p class="contact-label">E-mail:</p>
+          <p class="contact-text">victoria@gmail.com</p>
+        </div>
+
+        <div class="contact-detalles-grupo">
+          <p class="contact-text">Deje su mensaje y con gusto le responderé</p>
+        </div>
+        
+      </div>
+      <form class="contact-form">
+        <div class="contact-form-grupo">
+          <label for="name">Nombre</label>
+          <input required type="text" name="name" id="name">
+        </div>
+        <div class="contact-form-grupo">
+          <label for="email">E-mail</label>
+          <input required type="email" name="email" id="email">
+        </div>
+        <div class="contact-form-grupo">
+          <label for="mensaje">Mensaje</label>
+         <textarea required name="mensaje" id="mensaje" rows="6"></textarea>
+        </div>
+
+        <button type="submit" class="contact-form-submit">Enviar</button>
+      </form>
+    </section>
+      </div>
 </body>
 </html>

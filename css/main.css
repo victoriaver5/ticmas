@@ -2,6 +2,10 @@
 .topheader{
     background-image: linear-gradient(to right, rgb(92, 102, 100) 0%, rgb(84, 92, 88) 50%, rgb(53, 130, 92) 100%); 
     box-shadow:  0 4px 5px rgb(41, 43, 43);  
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
     z-index: 100;
   }
 
@@ -132,6 +136,10 @@
 
     html{ 
       scroll-behavior: smooth;
+    }
+
+    section[id]{
+      scroll-margin-top:70px ;
     }
 
     
