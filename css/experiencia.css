@@ -32,7 +32,7 @@ margin: 25px;
 .experiencia-fecha{
 font-size: 25px;
 font-weight: bold;
-color: rgb(62, 68, 126);
+color: rgb(20, 70, 32);
 }
 
 .experiencia-lugar{
@@ -45,6 +45,7 @@ margin-top: 5px;
 font-weight: 500;
 font-size: 18px;
 margin-top: 20px;
+text-transform: uppercase;
 }
 
 .experiencia-descripcion{

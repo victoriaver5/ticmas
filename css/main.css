@@ -105,8 +105,12 @@
    
   .menu a{
       color: rgb(255, 252, 252);
-      line-height: 70px;
-      font-size: 25px;
+      justify-content: center;
+      line-height: 120px;
+      font-size: 30px;
+      cursor: pointer;
+      
+    
       
     }
   
@@ -146,6 +150,7 @@
 body{ 
   background-color: #c9ced3;
   background-image: linear-gradient(to right, rgb(155, 164, 159) 0%, rgb(154, 162, 157) 50%, rgb(158, 192, 175) 100%);
+  padding-top: 70px;
 }
 
 
